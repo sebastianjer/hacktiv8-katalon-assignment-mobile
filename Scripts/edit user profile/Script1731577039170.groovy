@@ -73,16 +73,16 @@ if (userProfile.phone != Mobile.getText(findTestObject('Object Repository/Profil
 
 //address
 //somehow it clicks phone number even though the xpath/attribute is different, resulting in address inputted to phone number
-//if (userProfile.address != Mobile.getText(findTestObject('Object Repository/Profile/User Profile/View Address'), 3)) {
-//	//if not equal then update email
-//	Mobile.tap(findTestObject('Object Repository/Profile/User Profile/View Phone'), 0)
-//	//clear text
-//	Mobile.clearText(findTestObject('Object Repository/Profile/User Profile/Input Text'), 0)
-//	//set text
-//	Mobile.setText(findTestObject('Object Repository/Profile/User Profile/Input Text'), userProfile.address, 0)
-//	//click ok
-//	Mobile.tap(findTestObject('Object Repository/Profile/User Profile/Button OK'), 0)
-//}
+if (userProfile.address != Mobile.getText(findTestObject('Object Repository/Profile/User Profile/View Address'), 3)) {
+	//if not equal then update email
+	Mobile.tap(findTestObject('Object Repository/Profile/User Profile/View Address'), 0)
+	//clear text
+	Mobile.clearText(findTestObject('Object Repository/Profile/User Profile/Input Text'), 0)
+	//set text
+	Mobile.setText(findTestObject('Object Repository/Profile/User Profile/Input Text'), userProfile.address, 0)
+	//click ok
+	Mobile.tap(findTestObject('Object Repository/Profile/User Profile/Button OK'), 0)
+}
 
 //go back to Profile
 Mobile.tap(findTestObject('Object Repository/Profile/User Profile/Button Back'), 0)
