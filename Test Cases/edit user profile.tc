@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>edit user profile</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9a4b5ef7-9d7d-4632-84b4-ddf658e1a4d6</testCaseGuid>
+</TestCaseEntity>
